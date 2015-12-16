@@ -359,10 +359,10 @@ form {
 		float:left;
 		margin-top:-95%;
   }
-  #back,#fwd{
+/*  #back,#fwd{
       opacity: 0;
       z-index: -2;
-  }
+  }*/
   td{
       padding: 0px 41px 0px 30px;
   }
