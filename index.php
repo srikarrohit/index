@@ -23,7 +23,10 @@ echo"
 </head>
 </head>
 <body >
- <div  id='main' class='fadeInDown animated'>
+	<div id='preloader'>
+  <div id='status'>&nbsp;</div>
+	</div>
+ <div id='main' class='fadeInDown animated'>
 	<div id='pag-1'>
  	<div id='topBar'>
 			<p id='clock' class='cloc'>";

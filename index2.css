@@ -1,0 +1,1310 @@
+html { 
+	background-image:url("images/bg.jpg");
+  background-attachment: fixed;
+   /* -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;*/
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%; 
+ background-repeat:no-repeat;
+}
+body{
+overflow-y:hidden;
+overflow-x:hidden;
+font-family:'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+}
+#preloader  {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: #fefefe;
+    z-index: 99;
+    height: 100%;
+ }
+#status  {
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     background-image: url("images/715.gif");
+     background-repeat: no-repeat;
+     background-position: center;
+     margin: -100px 0 0 -100px;
+ }
+
+
+#main{
+	width:70%; 
+  border-radius: 10px;
+  margin: auto;
+//  margin-top: 3%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.profile
+{
+background-color: white;
+width:21em;
+height:10em;
+margin:auto;
+opacity:1;
+position:relative;
+top: 10vh;
+z-index: -1;
+}
+#topBar {
+    text-align: center;
+}
+.cloc {
+//    position: absolute;
+ //   font-family: 'Helvetica Neue';
+    color: #000;
+    font-size: 11.75pt;
+  //  margin-top: -30px;
+  //  margin-left:-40px;
+	text-align:center;
+  }
+ img{
+    height: 120px;
+    width: 120px;
+}
+td{
+   padding: 0px 41px 0px 30px;
+}
+#back{
+   position: fixed;
+   left:13%;
+	top:40vh;
+}
+#back img,#fwd img{
+	cursor:pointer;
+	height:76px!important;
+	width:23px!important;
+	opacity:0.5!important;
+	}
+#previous:hover,#next:hover{
+opacity:1!important;
+}
+#fwd img{
+-webkit-transform:rotate(180deg);
+-ms-transform:rotate(180deg);
+transform:rotate(180deg);
+}
+#fwd{
+   position: fixed;
+   right:13%;
+	top:40vh;
+  text-align: right;
+}
+#down{
+     margin: 0 auto;
+     width: 100%;
+}
+#ftr{
+    margin: auto;
+}
+.down{
+    padding: 5px 30px 5px 30px;
+}
+//img:hover {
+  height: 85px;
+  width: 85px;
+}
+#pag0{
+/*   margin-top: -420px;  
+	margin-top:-45%;*/
+	 margin-left: 1000px;
+}
+#pag1{
+/*  margin-top: -380px;
+	margin-top:-39.5%;*/
+	 margin-left: 2000px; 
+}
+#pag2{
+/*  margin-top:-375px;
+	margin-top:-39.5%;*/
+	 margin-left: 3000px; 
+}
+/* trial */
+#pag0,#pag1,#pag2{
+display:flex;
+flex-wrap:wrap;
+width:100%;
+margin-bottom:0px;
+margin-right:0px;
+justify-content:space-between;
+}
+#main{
+// min-height:600px;
+}
+#down{
+position:fixed;
+bottom:20px;
+}
+/* trial */
+.text:before{font-size:19px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+.text
+{
+font-size:12px;
+color:white;
+text-decoration:none;
+text-align:center;
+position:relative;
+bottom:5%;
+}
+
+
+#txtHint
+{
+z-index:1000;
+background-color:white;
+max-height:29vh;
+overflow-x:hidden;
+width:60%;
+margin-left:12%;
+font-weight:bold;
+font-size:14px;
+}
+#txtHint ul{
+border:1px solid #bdc3c7;
+}
+#getdata
+{
+margin-left:10%;
+width:80%;
+height:20px;
+font-size:18px;
+}
+.list
+{
+cursor:pointer;
+height:20px;
+}
+.list:hover
+{
+background-color:#ecf0f1;
+}
+#searchpage
+{
+position:relative;
+top:10%;
+}
+.ul
+{
+list-style-type: none!important;
+padding: 0px;
+margin: 0px;
+}
+.fa-5x
+{
+  font-size: 15vh!important;
+  margin-left: 2%;
+  margin-top: 4%;
+}
+.pro
+{
+  padding: 0px!important;
+  padding-left: 15px!important;
+}
+#card
+{
+  padding-top: 6px!important;
+  font-size:16px;
+  font-family: "Times New Roman", Times, serif;
+}
+#pagesfooter {
+  position: fixed;
+  width: 100%;
+  height: 20px;
+  bottom: 15%;
+  margin-left: -10px;
+  overflow: hidden;
+}
+#pages {
+  height: 20px;
+  margin: auto;
+  text-align: center;
+}
+#pages .circle.search {
+  background-image: url(images/sIcon.png);
+  background-color: transparent;
+  background-size: 100% 100%;
+  border-radius: 0;
+  opacity: 0.6;
+}
+.circle {
+  float: left;
+}
+.inactiveCricle {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background-color: rgb(240, 189, 113);
+  margin-right: 7px;
+  overflow: hidden;
+  cursor: pointer;
+	opacity:0.5;
+}
+.activeCricle {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -o-border-radius: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 4px;
+  background-color: rgb(230, 157, 50);
+  margin-right: 7px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#searchbox {
+  min-height:58vh;
+  border: 0px solid;
+  z-Index: 1000;
+  margin-left: auto;
+	margin-right:auto;
+  opacity: 0.9;
+  margin-top: 4%;
+}
+form {
+  display: block;
+  margin-top: 0em;
+}
+#searchbox div {
+//  float: left;
+}
+#searchinput {
+  width: 90%;
+  height: 30px;
+	background-color:white;
+	border-radius:20px;
+	border: 1px solid #bdc3c7;
+	margin:auto;
+}
+.fa-search{
+padding:0 0 0 5px;
+}
+#searchinput input {
+  width: 90%;
+  height: 28px;
+  padding: 0;
+  border: 1px solid #FFF;
+  outline: none;
+}
+.list
+{
+padding:2px 0 2px 2px;
+}
+
+.fullname{
+color:#658585;
+font-family:"Coda", sans-serif;
+font-size:1.53em;
+font-weight:bold;
+margin-top:10px;
+}
+
+.username{
+color:#e76043;
+font-size:.87em;
+font-family: "varela round", sans-serif;
+//margin-bottom:20px;
+}
+
+.email{
+ color: #c0c5c5;
+ font-size: .87em;
+ font-family: "varela round", sans-serif;
+}
+.avatar{
+border-radius:100%;
+height:6.23em;
+width:6.23em;
+}
+
+.data{
+background: #4eb6b6;
+text-align: center;
+color: #e3eeee;
+font-family: "varela round", sans-serif;
+font-weight:bold;
+padding: 1.30em;
+list-style-type:none;
+}
+.item{
+  max-height:10vh; 
+  padding:1vh;
+}
+#deansblog,#hospital,#moodle,#academics,#cc,#icsr,#alumni,#t5e,#shaastra,#saarang,#oir,#placements,#nptel,#departments,#clubs{
+  max-height:10vh; 
+  padding:1vh;
+  }
+#amalgam,#biofest,#ceafest,#exebit,#genesis,#chemclave,#wavez,#internationalday,#mechanica,#eml,#cfi,#nss,#vsc,#iitmsat,#astronomy{
+ max-height:10vh; 
+ padding:1vh;
+}
+#aerospace,#appliedmechanics,#biotechnology,#chemical,#civil,#chemistry,#cs,#elec,#ed,#hs,#management,#maths,#mech,#metallurgy,#physics{
+ max-height:10vh; 
+ padding:1vh;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 470px){
+  html{
+    background-size: 200% 100%;background-position: 90% -1%}
+  #ftr img{                                             
+    height:14vh;
+    width:22vw;
+  }
+  #pag0 img,#pag1 img,#pag2 img{
+   height:12vh;
+    width:12vh;
+  }
+  #pag0,#pag1,#pag2{padding:7.5%;width:85%;position: absolute;top:0px;height:70%;}
+   #back,#fwd{opacity: 0;
+  z-index: -2;}
+
+td{
+   padding: 0px 41px 0px 30px;
+}
+#back{
+   position: fixed;
+   left:13%;
+  top:40vh;
+}
+#txtHint{width:80%;}
+  #main{width:100%;height:100vh;}
+  #down td{
+padding:0%!important;
+}
+#down{
+width:95%;
+height:15%;
+position:fixed!important;
+bottom:1%!important;
+}
+
+#searchinput{
+width:99%;
+margin:auto;
+}
+#pag0{
+margin-left:1000px;
+margin-top: 10%;
+}
+#pag1{
+margin-left: 2000px;
+margin-top: 10%;
+}
+#pag2{
+margin-left:3000px;
+margin-top: 10%;
+}
+#pag0,#pag1,#pag2{
+  justify-content:space-between;
+}
+#end{
+  display: none;
+}
+}              /*for mobiles
+
+@media screen and (min-width:366px) and (max-width:499px) and (min-height:540px) and (max-height:600px)
+{
+#pag0{
+margin-top:-360px;
+}
+#pag1{
+margin-top:-221px;//vh don't use also px
+}
+#pag2{
+margin-top:-218px;
+}
+}
+@media screen and (min-width:366px) and (max-width:499px) and (min-height:601px) and (max-height:700px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-400px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+
+
+@media screen and (min-width:316px) and (max-width:365px) and (min-height:451px) and (max-height:500px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-300px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+@media screen and (min-width:366px) and (max-width:499px) and (max-height:430px)
+{
+#pag0{
+margin-top:-256px;
+}
+#pag1{
+margin-top:-221px;//vh don't use also px
+}
+#pag2{
+margin-top:-218px;
+}
+}
+@media screen and (min-width:366px) and (max-width:499px) and (min-height:431px) and (max-height:479px)
+{
+#pag0{
+margin-top:-296px;
+}
+#pag1{
+margin-top:-221px;//vh don't use also px
+}
+#pag2{
+margin-top:-218px;
+}
+}
+@media screen and (min-width:366px) and (max-width:499px) and (min-height:480px) and (max-height:539px)
+{
+#pag0{
+margin-top:-312px;
+}
+#pag1{
+margin-top:-221px;//vh don't use also px
+}
+#pag2{
+margin-top:-218px;
+}
+}
+
+@media screen and (min-width:316px) and (max-width:365px) and (min-height:541px) and (max-height:600px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-360px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+
+@media screen and (min-width:316px) and (max-width:365px) and (min-height:701px) and (max-height:800px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-440px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+@media screen and (min-width:316px) and (max-width:365px) and (min-height:701px) and (max-height:800px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-440px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+@media screen and (min-width:316px) and (max-width:365px) and (min-height:601px) and (max-height:700px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-400px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+@media screen and (min-width:316px) and (max-width:365px) and (min-height:541px) and (max-height:600px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-360px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+@media screen and (min-width:316px) and (max-width:365px) and (min-height:601px) and (max-height:700px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-400px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+@media screen and (min-width:316px) and (max-width:365px) and (min-height:451px) and (max-height:500px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-300px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+@media screen and (min-width:316px) and (max-width:365px) and (min-height:501px) and (max-height:540px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-325px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+@media screen and (min-width:316px) and (max-width:365px) and (max-height:400px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-256px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+@media screen and (min-width:316px) and (max-width:365px) and (min-height:401px) and (max-height:450px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-275px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+@media screen and (min-width:366px) and (max-width:499px) and (min-height:701px) and (max-height:800px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-440px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+@media screen and (min-width:300px) and (max-width:315px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0,#pag1,#pag2{
+margin-top:-256px;
+}
+}
+
+@media screen and (min-width:366px) and (max-width:499px) and (min-height:480px) and (max-height:539px)
+{
+#pag0{
+margin-top:-312px;
+}
+#pag1{
+margin-top:-221px;//vh don't use also px
+}
+#pag2{
+margin-top:-218px;
+}
+}
+@media screen and (min-width:366px) and (max-width:499px) and (min-height:540px) and (max-height:600px)
+{
+#pag0{
+margin-top:-360px;
+}
+#pag1{
+margin-top:-221px;//vh don't use also px
+}
+#pag2{
+margin-top:-218px;
+}
+}
+@media screen and (min-width:366px) and (max-width:499px) and (min-height:601px) and (max-height:700px)
+{
+  img{
+    height:60px;
+    width:60px;
+  }
+#pag0{
+margin-top:-400px;
+}
+#pag1{
+margin-top:-189px;//vh don't use also px
+}
+#pag2{
+margin-top:-185px;
+}
+}
+
+@media screen and (min-width:366px) and (max-width:499px) and (max-height:430px)
+{
+#pag0{
+margin-top:-256px;
+}
+#pag1{
+margin-top:-221px;//vh don't use also px
+}
+#pag2{
+margin-top:-218px;
+}
+}
+@media screen and (min-width:366px) and (max-width:499px) and (min-height:431px) and (max-height:479px)
+{
+#pag0{
+margin-top:-296px;
+}
+#pag1{
+margin-top:-221px;//vh don't use also px
+}
+#pag2{
+margin-top:-218px;
+}
+}
+
+@media screen and (max-width:499px)
+{
+#main{
+width:100%;
+}
+img{
+height:70px;
+width:70px;
+}
+#down td{
+padding:0px!important;
+}
+#down{
+width:100%;
+position:fixed!important;
+bottom:0px!important;
+}
+
+#searchinput{
+width:75%;
+margin:auto;
+}
+#pag0{
+margin-left:1000px;
+}
+#pag1{
+margin-left: 2000px;
+}
+#pag2{
+margin-left:3000px;
+}
+#pag0,#pag1,#pag2{
+  justify-content:space-between;
+}
+#end{
+  display: none;
+}
+}
+
+@media screen and (min-height:400px) and (max-height:500px){
+  img{
+    width:90px;
+    height:90px;
+  }
+  #pag0{
+   margin-top: -310px;
+}
+#pag1{
+   margin-top: -278px;
+}
+#pag2{
+   margin-top:-290px;
+}
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 960px) and (min-width: 470px){           
+
+  #ftr img{                                             
+    height:16vh;
+    width:17vw;
+  }
+  #pag0 img,#pag1 img,#pag2 img{
+   height:12vh;
+    width:12vh;
+  }
+  html{
+  background-size:120% 120%;
+  background-position: 70% 50%;
+}
+  /*html{
+  background-size:180% 100%;
+  background-position: 90% 0%;
+}*/
+  #searchinput{width:99%;}
+  #down{height: 10%;bottom:0px;}
+  #pag0,#pag1,#pag2{padding:7.5%;width:85%;position: absolute;top:0px;margin-top: 20%;}
+td{
+   padding: 0px 41px 0px 30px;
+}
+    #down td{
+padding:2vw;!important;
+      padding-top:0vw;!important;
+    }
+  #down{
+width:95%;
+height:15%;
+position:fixed!important;
+bottom:2vh!important;
+ }
+#back{
+   position: fixed;
+   left:13%;
+  top:40vh;
+}
+
+  #main{
+  width:80%; 
+  border-radius: 10px;
+  margin: auto;
+//  margin-top: 3%;
+  overflow: hidden;
+  white-space: nowrap;
+  height:100vh;
+}
+  #end{
+  display: none;}
+
+
+}
+
+@media screen and (max-width: 960px) and (min-width: 470px) and (orientation:landscape){ 
+#pag0,#pag1,#pag2{margin-top: 6%;}
+  #pag0 img,#pag1 img,#pag2 img{
+   height:13vh;
+    width:13vh;
+  }
+  #down{
+bottom:0vh!important;
+ }
+#deansblog,#hospital,#moodle,#academics,#cc,#icsr,#alumni,#t5e,#shaastra,#saarang,#oir,#placements,#nptel,#departments,#clubs{
+  padding:2vh;
+  }
+#amalgam,#biofest,#ceafest,#exebit,#genesis,#chemclave,#wavez,#internationalday,#mechanica,#eml,#cfi,#nss,#vsc,#iitmsat,#astronomy{
+ padding:2vh;
+}
+#aerospace,#appliedmechanics,#biotechnology,#chemical,#civil,#chemistry,#cs,#elec,#ed,#hs,#management,#maths,#mech,#metallurgy,#physics{
+ padding:2vh;
+}
+#ftr{margin-left:0%;}
+#pagesfooter{top:79%;}
+  #end{
+  display:inline;}
+
+    #ftr img,{
+    height:10vw!important;
+    width:10vw!important;
+  i}
+    #down td{
+padding:1vw;!important;
+      padding-top:0vw;!important;
+    }
+  #down{
+width:95%;
+height:15%;
+position:fixed!important;
+bottom:2vh!important;
+ }
+
+ }
+/*
+
+
+@media screen and (max-width: 600px){                                        /*eafheahfahfahfajajfajfajfasejafmaijvavmmvzmlmvzghs
+#pag0{
+//   margin-top: -420px;  
+  margin-top:-45%;
+   margin-left: 450px;
+}
+#pag1{
+//   margin-top: -380px;
+  margin-top:-39.5%;
+   margin-left: 900px; 
+}
+#pag2{
+//   margin-top:-375px;
+  margin-top:-39.5%;
+   margin-left: 1350px; 
+}
+}
+
+@media screen and (min-height:501px) and (max-height:640px){
+  img{
+    width:90px;
+    height:90px;
+  }
+  #pag0{
+   margin-top: -350px;
+}
+#pag1{
+   margin-top: -278px;
+}
+#pag2{
+   margin-top:-290px;
+}
+}
+
+@media screen and (min-width:500px) and (max-width:588px){
+img{
+width:80px;
+height:80px;
+}
+#pag0{ 
+   margin-top: -430px;
+}
+#pag1{ 
+   margin-top: -320px;
+}
+#pag2{
+   margin-top:-320px;
+}
+}
+
+@media screen and (min-width:588px) and (max-width:701px){
+img{
+width:100px;
+height:100px;
+}
+#pag0{
+   margin-top: -430px;
+}
+#pag1{ 
+   margin-top: -410px;
+}
+#pag2{
+   margin-top:-412px;
+}
+}
+
+}       */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media only screen and (min-width: 768px) and (max-width: 960px) and (orientation:portrait){
+
+
+td{
+   padding: 0px 41px 0px 30px;
+}
+#back{
+   position: fixed;
+   left:13%;
+  top:40vh;
+}
+#main{
+  width:70%; 
+  border-radius: 10px;
+  margin: auto;
+//  margin-top: 3%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+/*
+#ftr img{
+width:80px;
+height:80px;                                                      /*only 4 icons in d footer should show up
+}
+
+#searchinput {
+  width: 99%;                                               /*textbox,changes only height 
+}
+
+}                                                         /*for tablets portrait mode
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 960px) and (orientation:landscape) {
+html{
+  background-size:120% 120%;
+  background-position: 70% 50%;
+}
+
+td{
+   padding: 0px 41px 0px 30px;
+}
+#back{
+   position: fixed;
+   left:13%;
+  top:40vh;
+}
+#main{
+  width:70%; 
+  border-radius: 10px;
+  margin: auto;
+//  margin-top: 3%;
+  overflow: hidden;
+  white-space: nowrap;
+  height:100vh;
+}
+   #ftr img{
+    height:69%;
+    width:69%;
+  }
+    #pag0 img,#pag1 img,#pag2 img{
+   height:77px;
+    width:77px;
+  }
+    #down td{
+padding:0%!important;
+}
+  #searchinput{width:99%;}
+  #down{height: 20%;bottom:3vh;}
+  #pag0,#pag1,#pag2{padding:7.5%;width:85%;position: absolute;top:0px;margin-top: 9%;}
+#pagesfooter{bottom: 30vh;}
+#ftr{padding-left: 5vh;}
+/*
+#ftr img{
+width:80px;
+height:80px;                                              /*should change textinput border to transparent
+}
+*/
+
+#searchinput {
+  width: 99%;
+}                                                           /*text box,changes only height*/
+
+}
+
+
+                                                 /*for tablets landscape mode
+
+
+
+@media screen and (max-width:874px) and (min-width:702px){
+#pag0{
+   margin-top: -430px;
+}
+#pag1{
+   margin-top: -510px;
+}
+#pag2{
+   margin-top:-500px;
+}
+}
+
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 960px){             /*for lapie*/
+html{
+  background-size:100% 100%;
+  background-position: 70% 50%;
+}
+
+td{
+   padding: 0px 41px 0px 30px;
+}
+#back{
+   position: fixed;
+   left:13%;
+  top:40vh;
+}
+#main{
+  width:70%; 
+  border-radius: 10px;
+  margin: auto;
+//  margin-top: 3%;
+  overflow: hidden;
+  white-space: nowrap;
+  height:100vh;
+}
+
+    #ftr img, #pag0 img,#pag1 img,#pag2 img{
+   height:120px;
+    width:120px;
+  }
+
+  #searchinput{width:80%;}
+  #down{height: 20%;bottom:2vh;}
+  #pag0,#pag1,#pag2{width:100%;position:relative;float:left;margin-top:-43%;}
+#pagesfooter{bottom: 23vh;}
+#ftr{padding-right: 3vh;}
+#txtHint{width:80%;}
+    #pag0 img,#pag1 img,#pag2 img{
+   height:9vw;
+    width:9vw;
+  }
+#deansblog,#hospital,#moodle,#academics,#cc,#icsr,#alumni,#t5e,#shaastra,#saarang,#oir,#placements,#nptel,#departments,#clubs{
+ padding-bottom:3vw;
+	padding-right:1vw;
+padding-left:1vw;
+  }
+#amalgam,#biofest,#ceafest,#exebit,#genesis,#chemclave,#wavez,#internationalday,#mechanica,#eml,#cfi,#nss,#vsc,#iitmsat,#astronomy{
+ padding-bottom:3vw;
+  padding-right:1vw;
+padding-left:1vw;
+
+}
+#aerospace,#appliedmechanics,#biotechnology,#chemical,#civil,#chemistry,#cs,#elec,#ed,#hs,#management,#maths,#mech,#metallurgy,#physics{
+ padding-bottom:3vw;
+  padding-right:1vw;
+padding-left:1vw;
+
+}
+
+}
+/*
+@media screen and (min-width:1390px) and (min-height:801px)
+{
+#pag0{
+margin-top:-46%;
+}
+#pag1{
+margin-top:-25%;//vh don't use also px
+}
+#pag2{
+margin-top:-25%;
+}
+}
+
+#pag0{
+margin-top:-55%;
+}
+#pag1{
+margin-top:-42%;//vh don't use also px
+}
+#pag2{
+margin-top:-42%;
+}
+
+@media screen and (min-device-width: 1400px){
+#main{ 
+  width: 75%!important; 
+}
+#fwd{right:10%;}
+#back{left:10%;}
+}
+
+@media screen and (min-width:1280px) and (min-height:801px)
+{
+#pag0{
+margin-top:-55%;
+}
+#pag1{
+margin-top:-42%;//vh don't use also px
+}
+#pag2{
+margin-top:-42%;
+}
+}
+} */
+
