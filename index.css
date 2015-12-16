@@ -67,12 +67,8 @@ body{
 }
 
 .cloc {
-//    position: absolute;
- //   font-family: 'Helvetica Neue';
     color: #000;
     font-size: 11.75pt;
-  //  margin-top: -30px;
-  //  margin-left:-40px;
 	text-align:center;
 }
 
@@ -128,11 +124,6 @@ td{
     padding: 5px 30px 5px 30px;
 }
 
-//img:hover {
-  height: 85px;
-  width: 85px;
-}
-
 #pag0,#pag1,#pag2{
     display:flex;
     flex-wrap:wrap;
@@ -142,9 +133,6 @@ td{
     justify-content:space-between;
 }
 
-#main{
-// min-height:600px;
-}
 
 #down{
     position:fixed;
@@ -292,9 +280,6 @@ form {
    margin-top: 0em;
 }
 
-#searchbox div {
-//  float: left;
-}
 
 #searchinput {
    width: 90%;
@@ -333,7 +318,6 @@ form {
     color:#e76043;
     font-size:.87em;
     font-family: "varela round", sans-serif;
-//margin-bottom:20px;
 }
 
 .email{
@@ -363,24 +347,10 @@ form {
    padding:1vh;
 }
 
-#deansblog,#hospital,#moodle,#academics,#cc,#icsr,#alumni,#t5e,#shaastra,#saarang,#oir,#placements,#nptel,#departments,#clubs{
+.pag_img{
    max-height:10vh; 
    padding:1vh;
 }
-#amalgam,#biofest,#ceafest,#exebit,#genesis,#chemclave,#wavez,#internationalday,#mechanica,#eml,#cfi,#nss,#vsc,#iitmsat,#astronomy{
-   max-height:10vh; 
-   padding:1vh;
-}
-#aerospace,#appliedmechanics,#biotechnology,#chemical,#civil,#chemistry,#cs,#elec,#ed,#hs,#management,#maths,#mech,#metallurgy,#physics{
-   max-height:10vh; 
-   padding:1vh;
-}
-
-
-
-
-
-
 
 
 @media only screen and (max-width: 470px){
@@ -395,14 +365,9 @@ form {
       width:12vh;
   }
   #pag0,#pag1,#pag2{
-    //  padding:7.5%;
-    //  width:85%;
-     // position: absolute;
 			position:relative;
-    //  top:0px;
-    //  height:70%;
 		float:left;
-		margin-top:-100%;
+		margin-top:-95%;
   }
   #back,#fwd{
       opacity: 0;
@@ -438,15 +403,12 @@ form {
   }
   #pag0{
      margin-left:600px;
-//      margin-top: 10%;
   }
   #pag1{
       margin-left: 1200px;
- //     margin-top: 10%;
   }
   #pag2{
       margin-left:1800px;
-  //    margin-top: 10%;
   }
   #pag0,#pag1,#pag2{
       justify-content:space-between;
@@ -454,6 +416,9 @@ form {
   #end{
       display: none;
   }
+	#copyrights{
+		display:none;
+	}
 }              
 
 @media screen and (max-width: 960px) and (min-width: 470px){ 
@@ -506,7 +471,6 @@ form {
       width:80%; 
       border-radius: 10px;
       margin: auto;
-    //margin-top: 3%;
       overflow: hidden;
       white-space: nowrap;
       height:100vh;
@@ -540,13 +504,7 @@ form {
   #down{
       bottom:0vh!important;
   }
-  #deansblog,#hospital,#moodle,#academics,#cc,#icsr,#alumni,#t5e,#shaastra,#saarang,#oir,#placements,#nptel,#departments,#clubs{
-      padding:2vh;
-  }
-  #amalgam,#biofest,#ceafest,#exebit,#genesis,#chemclave,#wavez,#internationalday,#mechanica,#eml,#cfi,#nss,#vsc,#iitmsat,#astronomy{
-      padding:2vh;
-  }
-  #aerospace,#appliedmechanics,#biotechnology,#chemical,#civil,#chemistry,#cs,#elec,#ed,#hs,#management,#maths,#mech,#metallurgy,#physics{
+.pag_img{
       padding:2vh;
   }
   #ftr{ 
@@ -605,14 +563,13 @@ form {
       width:70%; 
       border-radius: 10px;
       margin: auto;
-    //margin-top: 3%;
       overflow: hidden;
       white-space: nowrap;
       height:100vh;
   }
   #ftr img{
-      height:69%;
-      width:69%;
+      height:16vh;
+      width:17vw;
   }
   #pag0 img,#pag1 img,#pag2 img{
       height:77px;
@@ -677,7 +634,6 @@ form {
       width:70%; 
       border-radius: 10px;
       margin: auto;
-    //margin-top: 3%;
       overflow: hidden;
       white-space: nowrap;
       height:100vh;
@@ -712,17 +668,7 @@ form {
       height:9vw;
       width:9vw;
   }
-  #deansblog,#hospital,#moodle,#academics,#cc,#icsr,#alumni,#t5e,#shaastra,#saarang,#oir,#placements,#nptel,#departments,#clubs{
-      padding-bottom:3vw;
-      padding-right:1vw;
-      padding-left:1vw;
-  }
-  #amalgam,#biofest,#ceafest,#exebit,#genesis,#chemclave,#wavez,#internationalday,#mechanica,#eml,#cfi,#nss,#vsc,#iitmsat,#astronomy{
-      padding-bottom:3vw;
-      padding-right:1vw;
-      padding-left:1vw;
-  }
-  #aerospace,#appliedmechanics,#biotechnology,#chemical,#civil,#chemistry,#cs,#elec,#ed,#hs,#management,#maths,#mech,#metallurgy,#physics{
+.pag_img{
       padding-bottom:3vw;
       padding-right:1vw;
       padding-left:1vw;
@@ -751,17 +697,7 @@ form {
       height:9vw;
       width:9vw;
   }
-#deansblog,#hospital,#moodle,#academics,#cc,#icsr,#alumni,#t5e,#shaastra,#saarang,#oir,#placements,#nptel,#departments,#clubs{
-padding-bottom:3vw;
-padding-right:1vw;
-padding-left:1vw;
-}
-#amalgam,#biofest,#ceafest,#exebit,#genesis,#chemclave,#wavez,#internationalday,#mechanica,#eml,#cfi,#nss,#vsc,#iitmsat,#astronomy{
-padding-bottom:3vw;
-padding-right:1vw;
-padding-left:1vw;
-}
-#aerospace,#appliedmechanics,#biotechnology,#chemical,#civil,#chemistry,#cs,#elec,#ed,#hs,#management,#maths,#mech,#metallurgy,#physics{
+.pag_img{
 padding-bottom:3vw;
 padding-right:1vw;
 padding-left:1vw;

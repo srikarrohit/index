@@ -555,7 +555,7 @@ function toRight(){
 			h=12;
 		if(t.getHours()==12)
 			ap="PM";
-		if(t.getHours()>=1 && t.getHours()<= 9)
+		if(h>=1 && h<= 9)
 			h="0"+h;
 		if(t.getMinutes()>=0 && t.getMinutes()<= 9)
 			m= "0"+m;

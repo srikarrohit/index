@@ -99,7 +99,7 @@ echo "
 						$out = mysqli_query($con,$query);
 						if (mysqli_num_rows($out)) {
 							while($row = mysqli_fetch_assoc($out)) {
-								echo "<a href='#' id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
+								echo "<a href='#' class='pag_img' id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
 							}	
 						}
  echo " </div>
@@ -108,7 +108,7 @@ echo "
 						$out = mysqli_query($con,$query);
 						if (mysqli_num_rows($out)) {
 							while($row = mysqli_fetch_assoc($out)) {
-								echo "<a href='#'  id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
+								echo "<a href='#' class='pag_img' id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
 							}	
 						}
 	echo "</div>
@@ -117,7 +117,7 @@ echo "
 						$out = mysqli_query($con,$query);
 						if (mysqli_num_rows($out)) {
 							while($row = mysqli_fetch_assoc($out)) {
-							echo "<a href='#'  id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
+							echo "<a href='#' class='pag_img' id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
 							}	
 						}
 						mysqli_close($con);
