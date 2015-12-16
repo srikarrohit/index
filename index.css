@@ -1,13 +1,3 @@
-html { 
-   background-image:url("images/bg.jpg");
-   background-attachment: fixed;
-   -webkit-background-size: 100%;         /*-wekit and -o @last check it */
-   -moz-background-size: 100%;
-   -o-background-size: 100%;
-   background-size: 100%; 
-   background-repeat:no-repeat;
-}
-
 body{
    overflow-y:hidden;
    overflow-x:hidden;
@@ -422,6 +412,15 @@ form {
 }              
 
 @media screen and (max-width: 960px) and (min-width: 470px){ 
+html { 
+   background-image:url("images/bg.jpg");
+   background-attachment: fixed;
+   -webkit-background-size: 100%;         /*-wekit and -o @last check it */
+   -moz-background-size: 100%;
+   -o-background-size: 100%;
+   background-size: 100%; 
+   background-repeat:no-repeat;
+}
   #ftr img{                                             
       height:16vh;
       width:17vw;
@@ -494,6 +493,15 @@ form {
 }
 
 @media screen and (max-width: 960px) and (min-width: 470px) and (orientation:landscape){ 
+html { 
+   background-image:url("images/bg.jpg");
+   background-attachment: fixed;
+   -webkit-background-size: 100%;         /*-wekit and -o @last check it */
+   -moz-background-size: 100%;
+   -o-background-size: 100%;
+   background-size: 100%; 
+   background-repeat:no-repeat;
+}
   #pag0,#pag1,#pag2{
       margin-top: 6%;
   }
@@ -546,6 +554,15 @@ form {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 960px) and (orientation:landscape) {
+html { 
+   background-image:url("images/bg.jpg");
+   background-attachment: fixed;
+   -webkit-background-size: 100%;         /*-wekit and -o @last check it */
+   -moz-background-size: 100%;
+   -o-background-size: 100%;
+   background-size: 100%; 
+   background-repeat:no-repeat;
+}
   html{
       background-size:120% 120%;
       background-position: 70% 50%;
@@ -617,6 +634,15 @@ form {
 }
 
 @media only screen and (min-width: 960px) and (max-width:1440px){             /*for lapie*/
+html { 
+   background-image:url("images/bg.jpg");
+   background-attachment: fixed;
+   -webkit-background-size: 100%;         /*-wekit and -o @last check it */
+   -moz-background-size: 100%;
+   -o-background-size: 100%;
+   background-size: 100%; 
+   background-repeat:no-repeat;
+}
   html{
       background-size:100% 100%;
       background-position: 70% 50%;
@@ -689,6 +715,15 @@ form {
 }
 
 @media only screen and (min-width: 1441px){  
+html { 
+   background-image:url("images/bg.jpg");
+   background-attachment: fixed;
+   -webkit-background-size: 100%;         /*-wekit and -o @last check it */
+   -moz-background-size: 100%;
+   -o-background-size: 100%;
+   background-size: 100%; 
+   background-repeat:no-repeat;
+}
   #ftr img, #pag0 img,#pag1 img,#pag2 img{
       height:120px;
       width:120px;
