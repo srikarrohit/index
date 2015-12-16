@@ -24,14 +24,14 @@ $(document).keydown(function (e)
 var count =0;
 var test=0;
  var width=0;
- if(screen.width<=600)
+ if($(window).width()<=470)
  {
  	width = 600;
 	console.log("fail");
  }
-else if(screen.width>1440)
+else if($(window).width()>1440)
 {
-	width = 1300;
+	width = 1400;
 	console.log("fail");
 }
  else
@@ -39,7 +39,6 @@ else if(screen.width>1440)
  	width = 1000;
 	//console.log("fail");
  }
-width=1400;
 t=600;
 $(document).ready( function() {
 $(window).load(function() {

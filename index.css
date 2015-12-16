@@ -37,7 +37,11 @@ body{
     margin: -100px 0 0 -100px;
 }
 
-
+#copyrights{
+	position:fixed;
+	bottom:2px;
+	left:5px;
+}
 #main{
   	width:70%; 
     border-radius: 10px;
@@ -433,15 +437,15 @@ form {
       margin:auto;
   }
   #pag0{
-     margin-left:1000px;
+     margin-left:600px;
 //      margin-top: 10%;
   }
   #pag1{
-      margin-left: 2000px;
+      margin-left: 1200px;
  //     margin-top: 10%;
   }
   #pag2{
-      margin-left:3000px;
+      margin-left:1800px;
   //    margin-top: 10%;
   }
   #pag0,#pag1,#pag2{

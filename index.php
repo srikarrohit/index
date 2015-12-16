@@ -86,18 +86,7 @@ echo"
 					<li><i class='fa fa-map-marker'></i><span> ".$row['hostel']."</li>
 				</ul>
 				</div>";
-/*		echo "<div class='profile'>
-  				<img class='avatar' src='https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTF_erFD1SeUnxEpvFjzBCCDxLvf-wlh9ZuPMqi02qGnyyBtPWdE-3KoH3s' alt='Ash' />
-					<div class='username'>".$row["fullname"]."<div>
-					<div class='bio'>".$row["username"]."<div>
-					<div class='description'>".$row["email"]."<div>
-					</div>";
-	<i class='fa fa-envelope' style='padding-right:5px'></i>	*/
 	}
-/*	else{
-		header('Location:http://localhost/index/index.php');
-		exit();
-	}*/
 	}
 	$con = mysqli_connect($server, $user, $pwd, $db);
 		if (!$con) {
