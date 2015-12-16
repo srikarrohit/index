@@ -27,16 +27,21 @@ var test=0;
  if(screen.width<=600)
  {
  	width = 600;
+	console.log("fail");
  }
+else if(screen.width>1440)
+{
+	width = 1300;
+	console.log("fail");
+}
  else
  {
  	width = 1000;
+	//console.log("fail");
  }
-width=1000;
+width=1400;
 t=600;
 $(document).ready( function() {
-					
-
 $(window).load(function() {
   	$("#status").fadeOut();
   	$("#preloader").delay(1000).fadeOut("slow");
