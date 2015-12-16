@@ -271,23 +271,23 @@ page=0;
 		  switch(page)
 			{ 
 			 case 0:
-		      //    $("#searchform").animate( {marginLeft:"+=100px"}, 350);
-				 	//		$("#searchform").animate( {marginLeft:"-=100px"}, 350); 
-		          $("#searchinput").animate( {marginLeft:"+=100px"}, 350);
-				 			$("#searchinput").animate( {marginLeft:"-=100px"}, 350); 
+		     //     $("#searchform").animate( {marginLeft:"+=100px"}, 350);
+				 //			$("#searchform").animate( {marginLeft:"-=100px"}, 350); 
+		     //     $("#searchinput").animate( {marginLeft:"+=100px"}, 350);
+				 //			$("#searchinput").css({"margin-left":"auto !important"});
 				//			$('#inputtext').val("",100);
-		          $(".profile").animate( {marginLeft:"+=100px"}, 350);
-				 			$(".profile").animate( {marginLeft:"-=100px"}, 350); 
-							$("#txtHint").animate( {marginLeft:"+=100px"}, 350);
-				 			$("#txtHint").animate( {marginLeft:"-=100px"}, 350); 
-				//			$("#searchbox").animate( {marginLeft:"+=100px"}, 650);
+		//					$(".profile").animate( {marginLeft:"+=100px"}, 350);
+		//		 			$(".profile").animate( {marginLeft:"-=100px"}, 350); 
+		//					$("#txtHint").animate( {marginLeft:"+=100px"}, 350);
+		//		 			$("#txtHint").animate( {marginLeft:"-=100px"}, 350); 
+	//							$("#searchinput")				//			$("#searchbox").animate( {marginLeft:"+=100px"}, 650);
         //      $("#searchbox").animate( {marginLeft:"-=100px"}, 650); 
 	          	break;
 	     case 1:
 							$("#searchbox").css("opacity",0.9);
 			        $("#searchform").animate( {marginLeft:"+="+width+"px"}, t);
 			        $(".profile").animate( {marginLeft:"+="+width+"px"}, t);
-			        $("#searchinput").animate( {marginLeft:"+="+width+"px"}, t);
+			        $("#searchinput").animate( {marginLeft:"+="+width+"px"}, t);							
 							$("#txtHint").animate( {marginLeft:"+="+width+"px"}, t);
 							$("#pag0").animate( {marginLeft:"+="+width+"px"}, t);
 			        $("#pag1").animate( {marginLeft:"+="+width+"px"}, t);
@@ -295,10 +295,12 @@ page=0;
 	            $("#-2").removeClass("activeCricle",t);
 	          	$("#-2").addClass("inactiveCricle",t);
 		        $("#-1").removeClass("inactiveCricle",t);
-
 	          	$("#-1").addClass("activeCricle",t);
-			        $("#searchinput").css ({"margin-left":"auto !important"});
-              break;
+								$("#searchinput").css({"margin-left":"auto!important"});
+								$("#searchform").css({"margin-left":"auto!important"});
+								$("#txtHint").css({"margin-left":"auto!important"});
+								$(".profile").css({"margin-left":"auto!important"});
+			        break;
        case 2:
               $("#searchform").animate( {marginLeft:"+="+width+"px"}, t);
                $(".profile").animate( {marginLeft:"+="+width+"px"}, t);
