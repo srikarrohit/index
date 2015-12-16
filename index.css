@@ -43,13 +43,25 @@ body{
 .profile
 {
     background-color: white;
-    width:21em;
+    width:23em;
     height:10em;
-    margin:auto;
     opacity:1;
     position:relative;
     top: 10vh;
     z-index: -1;
+}
+
+@-moz-document url-prefix() {
+.profile
+{
+left:30.5%;
+}
+}
+@media screen and (-webkit-min-device-pixel-ratio:0)  {
+.profile
+{
+margin:auto;
+}
 }
 
 #topBar {
@@ -277,9 +289,20 @@ form {
   	background-color:white;
   	border-radius:20px;
   	border: 1px solid #bdc3c7;
-  	margin:auto;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0)  {
+#searchinput{
+	margin:auto;
+}
+}
+
+@-moz-document url-prefix() {
+#searchinput{
+	position:relative;
+	left:10%;
+}
+}
 .fa-search{
     padding:0 0 0 5px;
 }
@@ -754,6 +777,12 @@ padding-left:1vw;
 
 #pag2{
 	 margin-left: 4200px; 
+}
+@-moz-document url-prefix() {
+.profile
+{
+left:38.5%;
+}
 }
 }
 /*above neeeds more */

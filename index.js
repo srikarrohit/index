@@ -39,7 +39,7 @@ else if($(window).width()>1440)
  	width = 1000;
 	//console.log("fail");
  }
-t=600;
+t=850;
 $(document).ready( function() {
 $(window).load(function() {
   	$("#status").fadeOut();
@@ -296,10 +296,10 @@ page=0;
 	          	$("#-2").addClass("inactiveCricle",t);
 		        $("#-1").removeClass("inactiveCricle",t);
 	          	$("#-1").addClass("activeCricle",t);
-								$("#searchinput").css({"margin-left":"auto!important"});
-								$("#searchform").css({"margin-left":"auto!important"});
-								$("#txtHint").css({"margin-left":"auto!important"});
-								$(".profile").css({"margin-left":"auto!important"});
+/*								$("#searchinput").css({"margin-left":"auto"});
+								$("#searchform").css({"margin-left":"auto"});
+								$("#txtHint").css({"margin-left":"auto"});
+								$(".profile").css({"margin-left":"auto"});*/
 			        break;
        case 2:
               $("#searchform").animate( {marginLeft:"+="+width+"px"}, t);
@@ -471,9 +471,8 @@ function toRight(){
 	            $("#-2").removeClass("activeCricle",t);
 	          	$("#-2").addClass("inactiveCricle",t);
 		        $("#-1").removeClass("inactiveCricle",t);
-
 	          	$("#-1").addClass("activeCricle",t);
-			        $("#searchinput").css ({"margin-left":"auto !important"});
+		//	        $("#searchinput").css ({"margin-left":"auto !important"});
               break;
        case 2:
               $("#searchform").animate( {marginLeft:"+="+width+"px"}, t);
