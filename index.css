@@ -51,16 +51,14 @@ body{
     z-index: -1;
 }
 
-@-moz-document url-prefix() {
-.profile
-{
-left:30.5%;
-}
-}
+
 @media screen and (-webkit-min-device-pixel-ratio:0)  {
 .profile
 {
 margin:auto;
+}
+#searchinput{
+	margin:auto;
 }
 }
 
@@ -291,18 +289,6 @@ form {
   	border: 1px solid #bdc3c7;
 }
 
-@media screen and (-webkit-min-device-pixel-ratio:0)  {
-#searchinput{
-	margin:auto;
-}
-}
-
-@-moz-document url-prefix() {
-#searchinput{
-	position:relative;
-	left:10%;
-}
-}
 .fa-search{
     padding:0 0 0 5px;
 }
@@ -432,6 +418,18 @@ form {
 	#copyrights{
 		display:none;
 	}
+	.profile{
+	width:15em!important;
+	height:6em!important;
+	}
+	.avatar{
+	display:none;
+	}
+	@-moz-document url-prefix() {
+	.profile{
+		left:15%;
+	}
+	}
 }              
 
 @media screen and (max-width: 960px) and (min-width: 470px){ 
@@ -444,9 +442,12 @@ html {
    background-size: 100%; 
    background-repeat:no-repeat;
 }
-  #ftr img{                                             
-      height:16vh;
-      width:17vw;
+#ftr{
+margin:auto;
+}
+  #ftr img,]{
+      height:48px!important;
+      width:48px!important;
   }
   #pag0 img,#pag1 img,#pag2 img{
       height:12vh;
@@ -464,7 +465,9 @@ html {
       bottom:0px;
   }
   #pag0,#pag1,#pag2{
-      padding:7.5%;
+ //     position:relative;
+//	float:left;
+padding:7.5%;
       width:85%;
       position: absolute;
       top:0px;
@@ -511,7 +514,9 @@ html {
 #pag2{
 	 margin-left: 3000px; 
 }
-
+ /*#pag0,#pag1,#pag2{
+     margin-top: -110%;
+  }*/
 
 }
 
@@ -525,8 +530,11 @@ html {
    background-size: 100%; 
    background-repeat:no-repeat;
 }
+
   #pag0,#pag1,#pag2{
-      margin-top: 6%;
+      position:relative!important;
+	float:left!important;
+     margin-top: -40%!important;
   }
   #pag0 img,#pag1 img,#pag2 img{
       height:13vh;
@@ -539,7 +547,7 @@ html {
       padding:2vh;
   }
   #ftr{ 
-      margin-left:0%;  
+      margin:auto;  
   }
   #pagesfooter{ 
       top:79%; 
@@ -547,9 +555,9 @@ html {
   #end{
       display:inline; 
   }
-  #ftr img,{
-      height:10vw!important;
-      width:10vw!important;
+  #ftr img{
+      height:48px!important;
+      width:48px!important;
   }
   #down td{
       padding:1vw;!important;
@@ -572,7 +580,9 @@ html {
 #pag2{
 	 margin-left: 3000px; 
 }
-
+#back,#fwd{
+      display:none;
+  }
 
 }
 
@@ -733,7 +743,16 @@ html {
 #pag2{
 	 margin-left: 3000px; 
 }
-
+@-moz-document url-prefix() {
+.profile
+{
+left:30.5%;
+}
+#searchinput{
+	position:relative;
+	left:10%;
+}
+}
 
 }
 

@@ -522,7 +522,7 @@ function toRight(){
 	        var touchobj = e.changedTouches[0] 
 	        startx = parseInt(touchobj.clientX)
 	        //statusdiv.innerHTML = 'Status: touchstart<br> ClientX: ' + startx + 'px'
-	        e.preventDefault()
+	     //   e.preventDefault()
 	    }, false)
 
 
@@ -537,7 +537,7 @@ function toRight(){
 	        if(dist<-70){
 	        	toLeft();
 	        }
-	        e.preventDefault()
+	     //   e.preventDefault()
 	    }, false)
 	 
 	}, false)
