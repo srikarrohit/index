@@ -99,7 +99,7 @@ echo "
 						$out = mysqli_query($con,$query);
 						if (mysqli_num_rows($out)) {
 							while($row = mysqli_fetch_assoc($out)) {
-								echo "<a href='#' class='pag_img' id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
+								echo "<a href='".$row["link"]."' class='pag_img' id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
 							}	
 						}
  echo " </div>
@@ -108,7 +108,7 @@ echo "
 						$out = mysqli_query($con,$query);
 						if (mysqli_num_rows($out)) {
 							while($row = mysqli_fetch_assoc($out)) {
-								echo "<a href='#' class='pag_img' id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
+								echo "<a href='".$row["link"]."' class='pag_img' id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
 							}	
 						}
 	echo "</div>
@@ -117,7 +117,7 @@ echo "
 						$out = mysqli_query($con,$query);
 						if (mysqli_num_rows($out)) {
 							while($row = mysqli_fetch_assoc($out)) {
-							echo "<a href='#' class='pag_img' id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
+							echo "<a href='".$row["link"]."' class='pag_img' id=".substr($row["image"],7,-4)."><img src='".$row["image"]."'/></a>";
 							}	
 						}
 						mysqli_close($con);
@@ -130,18 +130,18 @@ echo "
        <thead></thead>
        <tbody>
            <tr>
-             <td class='down'><a href='http://students.iitm.ac.in'>
+             <td class='down'><a href='https://students.iitm.ac.in/home'>
 								<img src='images/home.png'/></div></a>
 									</td>
-             <td class='down'><a href='http://students2.iitm.ac.in/notification'>
+             <td class='down'><a href='https://students.iitm.ac.in/notification'>
 								<img src='images/notification.png'/></a></td>
-							<td class='down'><a href='http://students.iitm.ac.in/feedback'>
+							<td class='down'><a href='https://students.iitm.ac.in/feedback'>
 								<img src='images/feedback.png'/></td>
-             <td class='down'><a href='http://students.iitm.ac.in/iportal'>
+             <td class='down'><a href='https://students.iitm.ac.in/iportal'>
 								<img src='images/iportal.png'/></a></td>
 
-             <td class='down' id='end'><a href='http://students2.iitm.ac.in/executive'>
-							<img src='images/executive.png'/></a></td>
+             <td class='down' id='end'><a href='https://students.iitm.ac.in/test'>
+							<img src='images/research.png'/></a></td>
            </tr>
        </tbody>
    </table>
